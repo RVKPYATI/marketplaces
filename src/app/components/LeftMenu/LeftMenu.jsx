@@ -71,7 +71,6 @@ export const LeftMenu = () => {
                     //onClick={(e) => handleClick(e, link)}
                   >
                     <li
-                      key={link.id}
                       className={`${
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
