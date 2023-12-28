@@ -113,14 +113,12 @@ export const LeftMenu = () => {
               {dropLinks &&
                 dropLinks.map((link) => (
                   <Link
+                    key={link.id}
                     href={link.path}
                     className="w-full"
                     onClick={() => setFlag(false)}
                   >
-                    <li
-                      key={link.id}
-                      className="hover:bg-[#F9CD46] rounded-md p-4 text-[#212529] font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50"
-                    >
+                    <li className="hover:bg-[#F9CD46] rounded-md p-4 text-[#212529] font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50">
                       {link.name}
                     </li>
                   </Link>
