@@ -67,7 +67,8 @@ export const LeftMenu = () => {
                   <Link
                     key={link.id}
                     href={link.path}
-                    onClick={(e) => handleClick(e, link)}
+                    onMouseEnter={(e) => handleClick(e, link)}
+                    //onClick={(e) => handleClick(e, link)}
                   >
                     <li
                       key={link.id}
@@ -94,7 +95,7 @@ export const LeftMenu = () => {
             </ul>
           </div>
           <div
-            className={`absolute top-0 right-[-100%] bg-[#6d6c6c] w-[350px] h-screen text-white  shadow-md ${
+            className={`absolute top-0 right-[-100%] bg-white w-full h-screen  shadow-md ${
               flag ? "block" : "hidden"
             }`}
           >
@@ -109,23 +110,24 @@ export const LeftMenu = () => {
                 </svg>
               </button>
             </div>
-            <ul className="flex flex-col items-center p-12">
+            <ul className="flex flex-col items-center p-3">
               {dropLinks &&
                 dropLinks.map((link) => (
-                  <li
-                    key={link.id}
-                    className="hover:bg-orange-300 rounded-md p-4  text-white hover:text-[#2B2B2B] transition ease-in-out delay-50"
+                  <Link
+                    href={link.path}
+                    className="w-full"
+                    onClick={() => setFlag(false)}
                   >
-                    <Link
-                      href={link.path}
-                      className=""
-                      onClick={() => setFlag(false)}
+                    <li
+                      key={link.id}
+                      className="hover:bg-[#F9CD46] rounded-md p-4 text-[#212529] font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50"
                     >
                       {link.name}
-                    </Link>
-                  </li>
+                    </li>
+                  </Link>
                 ))}
             </ul>
+            <div className="bg-gray-500 absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-70"></div>
           </div>
         </div>
       </div>
