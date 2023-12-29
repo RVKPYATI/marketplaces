@@ -124,7 +124,7 @@ export const LeftMenu = () => {
                   </Link>
                 ))}
             </ul>
-            <div className="bg-gray-500 absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-70"></div>
+            <div className="bg-gray-700 absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-70"></div>
           </div>
         </div>
       </div>
