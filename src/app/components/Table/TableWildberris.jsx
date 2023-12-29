@@ -32,7 +32,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-28 p-1 flex justify-center">
+                <div className="w-10 md:w-18 xl:w-24 p-1">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20  rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
@@ -40,7 +40,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-28  p-1 ">
+                <div className="w-10 md:w-20 xl:w-24 p-1 ">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
@@ -48,7 +48,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-28 p-1 flex items-center gap-1  ">
+                <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1  ">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
@@ -66,7 +66,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-28 p-1 flex items-center gap-1 ">
+                <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1 ">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
