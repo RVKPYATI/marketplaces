@@ -3,13 +3,13 @@ import Image from "next/image";
 export const TableWildberris = ({ headers, products }) => {
   return (
     <div className="p-1 mt-5">
-      <table className="md:table-fixed text-[10px] md:text-[15px] text-[#808080] md:w-full">
+      <table className="md:table-fixed text-[10px] md:text-[15px] text-[#808080] w-full">
         <thead>
           <tr className="border-b">
             {headers.map((header) => (
               <th
                 key={header.id}
-                className="md:first:text-left md:first:pl-20 md:first:w-[650px]"
+                className="md:first:text-left md:first:pl-20 2xl:first:w-[650px] xl:first:w-[450px] md:first:w-[320px] first:max-w-full"
               >
                 <div className={`w-18 p-1 `}>{header.label}</div>
               </th>
@@ -32,26 +32,26 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-28 p-1 flex justify-center">
+                <div className="w-10 md:w-20 xl:w-28 p-1 flex justify-center">
                   <input
                     type="text"
-                    className="w-8 md:w-24 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20  rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-28 p-1 ">
+                <div className="w-10 md:w-20 xl:w-28  p-1 ">
                   <input
                     type="text"
-                    className="w-8 md:w-24 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-28 p-1 flex items-center gap-1  ">
+                <div className="w-10 md:w-20 xl:w-28 p-1 flex items-center gap-1  ">
                   <input
                     type="text"
-                    className="w-8 md:w-24 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                   &nbsp; &#8381;
                 </div>
@@ -66,10 +66,10 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-28 p-1 flex items-center gap-1 ">
+                <div className="w-10 md:w-20 xl:w-28 p-1 flex items-center gap-1 ">
                   <input
                     type="text"
-                    className="w-8 md:w-24 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                   &nbsp; &#8381;
                 </div>

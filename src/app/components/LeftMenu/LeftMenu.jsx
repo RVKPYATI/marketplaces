@@ -50,7 +50,7 @@ export const LeftMenu = () => {
   return (
     <>
       <div className="bg-[#2B2B2B] h-screen">
-        <div className="px-6 relative">
+        <div className="px-6 relative md:px-3">
           <div className="flex justify-center">
             <Image
               src="/main_logo.jpg"
@@ -60,7 +60,7 @@ export const LeftMenu = () => {
               alt="img"
             />
           </div>
-          <div className="flex flex-col mt-8 md:w-40">
+          <div className="flex flex-col mt-8 md:w-36">
             <ul>
               {navlinks &&
                 navlinks.map((link) => (
@@ -75,7 +75,7 @@ export const LeftMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
                           : "text-[#a0a0a0]"
-                      } p-2 text-[#a0a0a0] text-base tracking-wider font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-72`}
+                      } p-2 text-[#a0a0a0] text-base tracking-wider font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60`}
                     >
                       {link.name}
                       {link.multilinks && (
