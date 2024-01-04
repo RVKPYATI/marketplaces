@@ -9,7 +9,7 @@ export const TableWildberris = ({ headers, products }) => {
             {headers.map((header) => (
               <th
                 key={header.id}
-                className="md:first:text-left md:first:pl-20 2xl:first:w-[650px] xl:first:w-[450px] md:first:w-[320px] first:max-w-full"
+                className="md:first:text-left md:first:pl-20 2xl:first:w-[850px] xl:first:w-[500px] md:first:w-[320px] first:max-w-full"
               >
                 <div className={`w-18 p-1 `}>{header.label}</div>
               </th>
@@ -18,7 +18,7 @@ export const TableWildberris = ({ headers, products }) => {
         </thead>
         <tbody>
           {products.map((product) => (
-            <tr key={product.id}>
+            <tr key={product.id} className="border-b">
               <th>
                 <div className="flex flex-wrap md:flex-nowrap md:gap-4 items-center">
                   <Image
@@ -28,14 +28,16 @@ export const TableWildberris = ({ headers, products }) => {
                     height={24}
                     alt="product"
                   />
-                  <p className="text-[#212529] md:text-base">{product.label}</p>
+                  <p className="text-[#212529] md:text-base ">
+                    {product.label}
+                  </p>
                 </div>
               </th>
               <th align="center">
                 <div className="w-10 md:w-18 xl:w-24 p-1">
                   <input
                     type="text"
-                    className="w-8 md:w-16 xl:w-20  rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                 </div>
               </th>
@@ -43,7 +45,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-10 md:w-20 xl:w-24 p-1 ">
                   <input
                     type="text"
-                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                 </div>
               </th>
@@ -51,7 +53,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1  ">
                   <input
                     type="text"
-                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                   />
                   &nbsp; &#8381;
                 </div>
@@ -61,7 +63,7 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="checkbox"
                     value=""
-                    className="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
+                    className="w-4 h-4 text-orange-400 bg-ehite border-gray-300 border-2 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
                   />
                 </div>
               </th>
@@ -69,7 +71,8 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1 ">
                   <input
                     type="text"
-                    className="w-8 md:w-16 xl:w-20 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    value={0}
                   />
                   &nbsp; &#8381;
                 </div>

@@ -50,7 +50,7 @@ export const LeftMenu = () => {
   return (
     <>
       <div className="bg-[#2B2B2B] h-screen">
-        <div className="px-6 relative md:px-3">
+        <div className="px-6 relative md:px-6 ">
           <div className="flex justify-center">
             <Image
               src="/main_logo.jpg"
@@ -75,12 +75,16 @@ export const LeftMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
                           : "text-[#a0a0a0]"
-                      } p-2 text-[#a0a0a0] text-base tracking-wider font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60`}
+                      } p-2  tracking-wider font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40`}
                     >
                       {link.name}
                       {link.multilinks && (
                         <svg
-                          fill="#FFFFFF"
+                          fill={`${
+                            pathName.startsWith(link.path)
+                              ? "#F9CD46"
+                              : "#a0a0a0"
+                          }`}
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -94,7 +98,7 @@ export const LeftMenu = () => {
             </ul>
           </div>
           <div
-            className={`absolute top-0 right-[-100%] bg-white w-full h-screen  shadow-md ${
+            className={`absolute top-0 right-[-550px] z-10 bg-white  h-screen w-[550px] shadow-md ${
               flag ? "block" : "hidden"
             }`}
           >
@@ -124,7 +128,7 @@ export const LeftMenu = () => {
                   </Link>
                 ))}
             </ul>
-            <div className="bg-gray-700 absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-70"></div>
+            <div className="bg-[#7f7f7f] absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-80"></div>
           </div>
         </div>
       </div>

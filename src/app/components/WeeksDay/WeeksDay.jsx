@@ -17,7 +17,7 @@ export const WeeksDay = () => {
           <thead>
             <tr>
               <th>
-                <div className="p-2 border-b">День недели</div>
+                <div className="p-2 border-b text-left">День недели</div>
               </th>
               <th>
                 <div className="p-2 border-b">Время</div>
@@ -39,7 +39,7 @@ export const WeeksDay = () => {
                   <div className="w-14 md:w-24 p-1 ">
                     <input
                       type="text"
-                      className="w-12 md:w-20 text-xs p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                      className="w-12 md:w-24 text-center text-[#212529] p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                     />
                   </div>
                 </th>
@@ -49,7 +49,7 @@ export const WeeksDay = () => {
                       <input
                         type="checkbox"
                         value=""
-                        className="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
+                        className="w-4 h-4 text-orange-400  bg-white border-gray-300 border-2 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
                       />
                     </div>
                   </div>
