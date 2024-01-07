@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navlinks = [
-  { id: 1, name: "Wildberries", path: "/wildberries" },
+  { id: 1, name: "Wilberries", path: "/wildberries" },
   { id: 2, name: "Ozon", path: "/ozon" },
   {
     id: 3,
@@ -60,7 +60,7 @@ export const LeftMenu = () => {
               alt="img"
             />
           </div>
-          <div className="flex flex-col mt-8 md:w-36">
+          <div className="flex flex-col mt-[22px] md:w-36">
             <ul>
               {navlinks &&
                 navlinks.map((link) => (
@@ -75,7 +75,7 @@ export const LeftMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
                           : "text-[#a0a0a0]"
-                      } p-2  tracking-wider font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40`}
+                      } p-2 pl-3 pr-0 font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[1.5px]`}
                     >
                       {link.name}
                       {link.multilinks && (
