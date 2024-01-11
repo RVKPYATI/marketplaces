@@ -67,8 +67,8 @@ export const LeftMenu = () => {
                   <Link
                     key={link.id}
                     href={link.path}
-                    onMouseEnter={(e) => handleClick(e, link)}
-                    //onClick={(e) => handleClick(e, link)}
+                    //onMouseEnter={(e) => handleClick(e, link)}
+                    onClick={(e) => handleClick(e, link)}
                   >
                     <li
                       className={`${
@@ -98,11 +98,11 @@ export const LeftMenu = () => {
             </ul>
           </div>
           <div
-            className={`absolute top-0 right-[-550px] z-10 bg-white  h-screen w-[550px] shadow-md ${
+            className={`absolute top-0 right-[-388px] z-10 bg-white  h-screen w-[388px] shadow-md ${
               flag ? "block" : "hidden"
             }`}
           >
-            <div className="text-white text-right ">
+            <div className="text-white text-right md:hidden">
               <button onClick={() => setFlag(false)} className="text-white w-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
@@ -122,13 +122,13 @@ export const LeftMenu = () => {
                     className="w-full"
                     onClick={() => setFlag(false)}
                   >
-                    <li className="hover:bg-[#F9CD46] rounded-md p-4 text-[#212529] font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50">
+                    <li className="hover:bg-[#F9CD46] rounded-md p-2 text-[#212529] text-sm font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50">
                       {link.name}
                     </li>
                   </Link>
                 ))}
             </ul>
-            <div className="bg-[#7f7f7f] absolute left-[100%] top-0 w-[1600px] h-screen z-10 opacity-80"></div>
+            <div className="bg-[#7f7f7f] absolute left-[100%] top-0 w-screen h-screen z-10 opacity-80"></div>
           </div>
         </div>
       </div>

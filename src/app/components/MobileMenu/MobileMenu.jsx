@@ -76,7 +76,7 @@ export const MobileMenu = () => {
 
       {isOpen && (
         <div className="fixed top-6 mr-2 w-screen z-10">
-          <div className="bg-[#2B2B2B]  p-2 h-screen text-center">
+          <div className="bg-[#2B2B2B] p-2 h-screen text-center">
             {/* Здесь вы можете добавить свои пункты меню */}
             <ul>
               {navlinks &&
@@ -110,7 +110,7 @@ export const MobileMenu = () => {
         </div>
       )}
       {isOpenDropdown && (
-        <div className="fixed top-6  w-screen right-0 z-10">
+        <div className="fixed top-6 w-screen right-0 z-10">
           <div className="bg-[#6d6c6c] px-2 pb-6 text-center rounded h-screen">
             {/* Здесь вы можете добавить свои пункты меню */}
             <div className="text-white text-right ">

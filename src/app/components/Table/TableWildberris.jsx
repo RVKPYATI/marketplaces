@@ -38,6 +38,7 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    defaultValue={0}
                   />
                 </div>
               </th>
@@ -46,6 +47,7 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    defaultValue={0}
                   />
                 </div>
               </th>
@@ -54,6 +56,7 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                    defaultValue={0}
                   />
                   &nbsp; &#8381;
                 </div>
@@ -62,7 +65,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="flex justify-center items-center">
                   <input
                     type="checkbox"
-                    value=""
+                    defaultValue={0}
                     className="w-4 h-4 text-orange-400 bg-ehite border-gray-300 border-2 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
                   />
                 </div>
@@ -72,7 +75,7 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
-                    value={0}
+                    defaultValue={0}
                   />
                   &nbsp; &#8381;
                 </div>
