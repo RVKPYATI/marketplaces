@@ -10,11 +10,11 @@ const headers = [
 ];
 
 const products = [
-  { id: 1, label: "Робот пылесос Leege 7", img: "/product.jpg" },
-  { id: 2, label: "Робот мойщик окон 188", img: "/product.jpg" },
-  { id: 3, label: "Робот пылесос Leege D7", img: "/product.jpg" },
-  { id: 4, label: "Робот мойщик окон 365", img: "/product.jpg" },
-  { id: 5, label: "Робот мойщик окон 291 Ultrasonic", img: "/product.jpg" },
+  { id: 1, label: "Робот пылесос Leege 7", img: "/prod.webp" },
+  { id: 2, label: "Робот мойщик окон 188", img: "/prod.webp" },
+  { id: 3, label: "Робот пылесос Leege D7", img: "/prod.webp" },
+  { id: 4, label: "Робот мойщик окон 365", img: "/prod.webp" },
+  { id: 5, label: "Робот мойщик окон 291 Ultrasonic", img: "/prod.webp" },
 ];
 
 export default function Wildberries() {

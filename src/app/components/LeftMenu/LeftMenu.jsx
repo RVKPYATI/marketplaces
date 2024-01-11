@@ -67,7 +67,7 @@ export const LeftMenu = () => {
                   <Link
                     key={link.id}
                     href={link.path}
-                    //onMouseEnter={(e) => handleClick(e, link)}
+                    onMouseEnter={(e) => handleClick(e, link)}
                     onClick={(e) => handleClick(e, link)}
                   >
                     <li
@@ -128,7 +128,7 @@ export const LeftMenu = () => {
                   </Link>
                 ))}
             </ul>
-            <div className="bg-[#7f7f7f] absolute left-[100%] top-0 w-screen h-screen z-10 opacity-80"></div>
+            <div className="bg-[#000000] absolute left-[100%] top-0 w-screen h-screen z-10 opacity-50"></div>
           </div>
         </div>
       </div>

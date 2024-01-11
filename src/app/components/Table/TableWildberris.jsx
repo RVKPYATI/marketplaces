@@ -5,11 +5,11 @@ export const TableWildberris = ({ headers, products }) => {
     <div className="p-1 mt-5">
       <table className="md:table-fixed text-[10px] md:text-[15px] text-[#808080] w-full">
         <thead>
-          <tr className="border-b">
+          <tr className="border-b border-[#808080]">
             {headers.map((header) => (
               <th
                 key={header.id}
-                className="md:first:text-left md:first:pl-20 2xl:first:w-[850px] xl:first:w-[500px] md:first:w-[320px] first:max-w-full"
+                className="md:first:text-left md:first:pl-12 2xl:first:w-[850px] xl:first:w-[500px] md:first:w-[320px] first:max-w-full"
               >
                 <div className={`w-18 p-1 `}>{header.label}</div>
               </th>
@@ -34,7 +34,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-18 xl:w-24 p-1">
+                <div className="w-10 md:w-18 xl:w-24 p-2">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
@@ -43,7 +43,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-24 p-1 ">
+                <div className="w-10 md:w-20 xl:w-24 p-2">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
@@ -52,13 +52,15 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1  ">
+                <div className="w-10 md:w-20 xl:w-24 p-2 flex items-center gap-1  ">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                     defaultValue={0}
                   />
-                  &nbsp; &#8381;
+                  <div className="text-[#8F8F8F] text-sm flex items-center">
+                    ₽
+                  </div>
                 </div>
               </th>
               <th>
@@ -66,18 +68,20 @@ export const TableWildberris = ({ headers, products }) => {
                   <input
                     type="checkbox"
                     defaultValue={0}
-                    className="w-4 h-4 text-orange-400 bg-ehite border-gray-300 border-2 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
+                    className="w-[17px] h-[17px] text-orange-400 bg-ehite border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-2 cursor-pointer"
                   />
                 </div>
               </th>
               <th align="center">
-                <div className="w-10 md:w-20 xl:w-24 p-1 flex items-center gap-1 ">
+                <div className="w-10 md:w-20 xl:w-24 p-2 flex items-center gap-1">
                   <input
                     type="text"
                     className="w-8 md:w-16 xl:w-20 text-[#212529] text-center rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                     defaultValue={0}
                   />
-                  &nbsp; &#8381;
+                  <div className="text-[#8F8F8F] text-sm flex items-center">
+                    ₽
+                  </div>
                 </div>
               </th>
             </tr>

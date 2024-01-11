@@ -20,10 +20,10 @@ export const WeeksDay = () => {
                 <div className="p-2 border-b text-left">День недели</div>
               </th>
               <th>
-                <div className="p-2 border-b">Время</div>
+                <div className="p-2 border-b w-[150px]">Время</div>
               </th>
               <th>
-                <div className="p-2 border-b">Демпинг</div>
+                <div className="p-2 border-b w-[101px]">Демпинг</div>
               </th>
             </tr>
           </thead>
@@ -31,15 +31,15 @@ export const WeeksDay = () => {
             {dayWeek.map((day) => (
               <tr key={day.id} className="p-2  border-b ">
                 <th>
-                  <div className="w-14 md:w-56 p-2 text-left text-[#212529]">
+                  <div className="w-14 md:w-56 p-2 text-left text-[#212529] ">
                     {day.label}
                   </div>
                 </th>
-                <th>
-                  <div className="w-14 md:w-24 p-1 ">
+                <th align="center">
+                  <div className="w-14 md:w-24 p-1">
                     <input
                       type="text"
-                      className="w-12 md:w-24 text-center text-[#212529] p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                      className="w-12 md:w-[100px] text-center text-[#212529] p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
                       defaultValue={0}
                     />
                   </div>
@@ -50,7 +50,7 @@ export const WeeksDay = () => {
                       <input
                         type="checkbox"
                         defaultValue={0}
-                        className="w-4 h-4 text-orange-400  bg-white border-gray-300 border-2 rounded focus:ring-gray-300 focus:ring-2 cursor-pointer"
+                        className="w-[17px] h-[17px] text-orange-400  bg-white border-[#C3C3C3] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-2 cursor-pointer"
                       />
                     </div>
                   </div>
@@ -62,12 +62,12 @@ export const WeeksDay = () => {
         <div className="w-10 p-2">
           <label className="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" defaultValue={0} className="sr-only peer" />
-            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-orange-400"></div>
+            <div className="w-[30px] h-[20px] bg-white border border-[#bfbfbf] peer-focus:outline-none  peer-focus:ring-gray-300 rounded-full peer peer-checked:after:translate-x-[80%] rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[3px] after:start-[3px] after:bg-[#bfbfbf]  after:border-gray-300 after:border after:rounded-full after:h-[14px] after:w-[14px] after:transition-all  peer-checked:bg-orange-300 peer-checked:after:bg-white peer-checked:border-orange-400 "></div>
           </label>
         </div>
       </div>
       <div>
-        <ButtonPrimary>Сохранить</ButtonPrimary>
+        <ButtonPrimary style="md:font-medium">Сохранить</ButtonPrimary>
       </div>
     </>
   );
