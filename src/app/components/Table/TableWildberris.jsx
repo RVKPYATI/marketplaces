@@ -21,7 +21,7 @@ export const TableWildberris = ({ headers, products }) => {
           {products.map((product) => (
             <tr
               key={product.id}
-              className={`${yandexBold.className} border-b hover:bg-gray-50 cursor-pointer`}
+              className={`${yandexBold.className} font-bold border-b hover:bg-gray-50 cursor-pointer`}
             >
               <th>
                 <div className="flex flex-wrap md:flex-nowrap md:gap-4 items-center">
@@ -32,7 +32,7 @@ export const TableWildberris = ({ headers, products }) => {
                     height={24}
                     alt="product"
                   />
-                  <p className="text-[#212529] font-bold md:text-base leading-tight">
+                  <p className="text-[#212529]  md:text-base leading-tight">
                     {product.label}
                   </p>
                 </div>
