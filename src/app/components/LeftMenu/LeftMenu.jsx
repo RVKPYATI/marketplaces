@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { yandexBold } from "@/app/fonts";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -49,7 +50,7 @@ export const LeftMenu = () => {
 
   return (
     <>
-      <div className="bg-[#2B2B2B] h-screen">
+      <div className="bg-[#2B2B2B] h-full">
         <div className="px-6 relative md:px-6 ">
           <div className="flex justify-center">
             <Image
@@ -75,7 +76,9 @@ export const LeftMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
                           : "text-[#a0a0a0]"
-                      } p-2 pl-3 pr-0 font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[2px]`}
+                      } ${
+                        yandexBold.className
+                      } p-2 pl-3 pr-0 font-bold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[1.1px]`}
                     >
                       {link.name}
                       {link.multilinks && (

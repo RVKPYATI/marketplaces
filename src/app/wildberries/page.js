@@ -12,7 +12,7 @@ const headers = [
 const products = [
   {
     id: 1,
-    label: "HOBOT 388 Ultrasonic робот мойщик окон (гарантия 3 года)",
+    label: "HOBOT 388 Ultrasonic робот мойщик окон)",
     img: "/prod.webp",
   },
   { id: 2, label: "Робот мойщик окон 188", img: "/prod.webp" },

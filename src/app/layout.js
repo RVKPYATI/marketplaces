@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={yandexRegular.className}>
         <MobileMenu />
         <main className="flex gap-4 md:gap-2">
-          <div className="hidden lg:block md:min-w-[260px] xl:min-w-[205px] 2xl:max-w-[320px]">
+          <div className="hidden lg:block md:min-w-[260px] xl:min-w-[205px] 2xl:min-w-[320px]">
             <LeftMenu />
           </div>
           <div className="w-full">{children}</div>

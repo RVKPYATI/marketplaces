@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { yandexBold } from "@/app/fonts";
 
 export const TableWildberris = ({ headers, products }) => {
   return (
@@ -18,7 +19,10 @@ export const TableWildberris = ({ headers, products }) => {
         </thead>
         <tbody>
           {products.map((product) => (
-            <tr key={product.id} className="border-b">
+            <tr
+              key={product.id}
+              className={`${yandexBold.className} border-b hover:bg-gray-50 cursor-pointer`}
+            >
               <th>
                 <div className="flex flex-wrap md:flex-nowrap md:gap-4 items-center">
                   <Image
@@ -28,7 +32,7 @@ export const TableWildberris = ({ headers, products }) => {
                     height={24}
                     alt="product"
                   />
-                  <p className="text-[#212529] md:text-base font-bold leading-tight">
+                  <p className="text-[#212529] font-bold md:text-base leading-tight">
                     {product.label}
                   </p>
                 </div>
@@ -37,7 +41,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                 </div>
@@ -46,7 +50,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                 </div>
@@ -55,7 +59,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1  ">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={"22 900"}
                   />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
@@ -69,7 +73,7 @@ export const TableWildberris = ({ headers, products }) => {
                     type="checkbox"
                     id="check"
                     defaultValue={0}
-                    className="w-[17px] h-[17px] text-[#F9CD46] bg-white border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-0 cursor-pointer relative checked:after:absolute checked:after:bg-[url('/check.svg')] checked:after:top-0 checked:after:w-full checked:after:h-full"
+                    className="w-[17px] h-[17px] text-[#F9CD46] bg-white border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-0 cursor-pointer relative checked:after:absolute checked:after:bg-[url('/check.svg')] checked:after:top-0 checked:after:w-full checked:after:h-full hover:border-[#8f8f8f]"
                   />
                 </div>
               </th>
@@ -77,7 +81,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
