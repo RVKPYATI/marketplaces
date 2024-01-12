@@ -39,7 +39,7 @@ export const WeeksDay = () => {
                   <div className="w-14 md:w-24 p-1">
                     <input
                       type="text"
-                      className="w-12 md:w-[100px] text-center text-[#212529] p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400"
+                      className="w-12 md:w-[100px] text-center text-[#212529] p-0 rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white"
                       defaultValue={0}
                     />
                   </div>

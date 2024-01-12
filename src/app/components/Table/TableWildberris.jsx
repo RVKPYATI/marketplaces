@@ -37,7 +37,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400 p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                 </div>
@@ -46,7 +46,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400 p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                 </div>
@@ -55,7 +55,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1  ">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400 p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={"22 900"}
                   />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
@@ -77,7 +77,7 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1">
                   <input
                     type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-gray-400 p-0"
+                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
                     defaultValue={0}
                   />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
