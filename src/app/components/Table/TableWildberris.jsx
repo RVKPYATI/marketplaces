@@ -67,8 +67,9 @@ export const TableWildberris = ({ headers, products }) => {
                 <div className="flex justify-center items-center">
                   <input
                     type="checkbox"
+                    id="check"
                     defaultValue={0}
-                    className="w-[17px] h-[17px] text-orange-400 bg-ehite border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-2 cursor-pointer"
+                    className="w-[17px] h-[17px] text-[#F9CD46] bg-white border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-0 cursor-pointer relative checked:after:absolute checked:after:bg-[url('/check.svg')] checked:after:top-0 checked:after:w-full checked:after:h-full"
                   />
                 </div>
               </th>
