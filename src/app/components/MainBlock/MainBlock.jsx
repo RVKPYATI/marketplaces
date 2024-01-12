@@ -7,8 +7,12 @@ import { yandexBold } from "@/app/fonts";
 
 export const MainBlock = ({ headers, products, title }) => {
   return (
-    <div className="p-2">
-      <h1 className={`text-5xl mt-2 ml-5 ${yandexBold.className}`}>{title}</h1>
+    <div className="px-1 md:px-6">
+      <h1
+        className={`text-5xl mt-2 ml-5 leading-normal ${yandexBold.className}`}
+      >
+        {title}
+      </h1>
       <div className="flex justify-end">
         <ModalWrapper>
           <h2>Добавление продукта</h2>

@@ -10,7 +10,11 @@ const headers = [
 ];
 
 const products = [
-  { id: 1, label: "Робот пылесос Leege 7", img: "/prod.webp" },
+  {
+    id: 1,
+    label: "HOBOT 388 Ultrasonic робот мойщик окон (гарантия 3 года)",
+    img: "/prod.webp",
+  },
   { id: 2, label: "Робот мойщик окон 188", img: "/prod.webp" },
   { id: 3, label: "Робот пылесос Leege D7", img: "/prod.webp" },
   { id: 4, label: "Робот мойщик окон 365", img: "/prod.webp" },

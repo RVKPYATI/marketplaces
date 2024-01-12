@@ -75,7 +75,7 @@ export const LeftMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-[#F9CD46]"
                           : "text-[#a0a0a0]"
-                      } p-2 pl-3 pr-0 font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[1.5px]`}
+                      } p-2 pl-3 pr-0 font-semibold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[2px]`}
                     >
                       {link.name}
                       {link.multilinks && (
@@ -122,7 +122,7 @@ export const LeftMenu = () => {
                     className="w-full"
                     onClick={() => setFlag(false)}
                   >
-                    <li className="hover:bg-[#F9CD46] rounded-md p-2 text-[#212529] text-sm font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50">
+                    <li className="hover:bg-[#FFE991] rounded-lg p-2 text-[#212529] text-sm font-semibold hover:text-[#2B2B2B] transition ease-in-out delay-50">
                       {link.name}
                     </li>
                   </Link>
