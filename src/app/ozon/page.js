@@ -18,6 +18,10 @@ const products = [
   { id: 5, label: "Робот мойщик окон 291 Ultrasonic", img: "/product.jpg" },
 ];
 
+export const metadata = {
+  title: "Ozon",
+};
+
 export default function Ozon() {
   return <MainBlock headers={headers} products={products} title="Ozon" />;
 }

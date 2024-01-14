@@ -21,6 +21,10 @@ const products = [
   { id: 5, label: "Робот мойщик окон 291 Ultrasonic", img: "/prod.webp" },
 ];
 
+export const metadata = {
+  title: "Wildberries",
+};
+
 export default function Wildberries() {
   return (
     <MainBlock headers={headers} products={products} title="Wildberries" />
