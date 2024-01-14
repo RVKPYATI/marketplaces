@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { yandexBold } from "@/app/fonts";
+import { InputCheckbox } from "../ui/InputCheckbox/InputCheckbox";
+import { InputText } from "../ui/InputText/InputText";
 
 export const TableWildberris = ({ headers, products }) => {
   return (
@@ -39,29 +41,17 @@ export const TableWildberris = ({ headers, products }) => {
               </th>
               <th align="center">
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
-                  <input
-                    type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
-                    defaultValue={0}
-                  />
+                  <InputText />
                 </div>
               </th>
               <th align="center">
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
-                  <input
-                    type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
-                    defaultValue={0}
-                  />
+                  <InputText />
                 </div>
               </th>
               <th align="center">
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1  ">
-                  <input
-                    type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
-                    defaultValue={"22 900"}
-                  />
+                  <InputText defaultValue={"22 900"} />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
                     ₽
                   </div>
@@ -69,21 +59,12 @@ export const TableWildberris = ({ headers, products }) => {
               </th>
               <th>
                 <div className="flex justify-center items-center">
-                  <input
-                    type="checkbox"
-                    id="check"
-                    defaultValue={0}
-                    className="w-[17px] h-[17px] text-[#F9CD46] bg-white border-[#bfbfbf] border-2 rounded-[2px] focus:ring-gray-300 focus:ring-0 cursor-pointer relative checked:after:absolute checked:after:bg-[url('/check.svg')] checked:after:top-0 checked:after:w-full checked:after:h-full hover:border-[#8f8f8f]"
-                  />
+                  <InputCheckbox />
                 </div>
               </th>
               <th align="center">
                 <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1">
-                  <input
-                    type="text"
-                    className="w-full text-[#212529] text-center text-xs md:text-[15px] rounded-md bg-gray-200 hover:bg-gray-300 h-9 border-none focus:ring-2 focus:ring-orange-300 focus:bg-white p-0"
-                    defaultValue={0}
-                  />
+                  <InputText />
                   <div className="text-[#8F8F8F] text-sm flex items-center">
                     ₽
                   </div>

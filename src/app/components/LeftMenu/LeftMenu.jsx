@@ -131,7 +131,10 @@ export const LeftMenu = () => {
                   </Link>
                 ))}
             </ul>
-            <div className="bg-[#000000] absolute left-[100%] top-0 w-screen h-screen z-10 opacity-50"></div>
+            <div
+              onClick={() => setFlag(false)}
+              className="bg-[#000000] absolute left-[100%] top-0 w-screen h-screen z-10 opacity-50"
+            ></div>
           </div>
         </div>
       </div>
