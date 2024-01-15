@@ -51,7 +51,7 @@ export const LeftMenu = () => {
   return (
     <>
       <div className="bg-[#2B2B2B] h-full">
-        <div className="px-6 relative md:px-6 ">
+        <div className="px-3 relative md:px-3 ">
           <div className="flex justify-center">
             <Image
               src="/main_logo.jpg"
@@ -61,7 +61,7 @@ export const LeftMenu = () => {
               alt="img"
             />
           </div>
-          <div className="flex flex-col mt-[22px] md:w-36">
+          <div className="flex flex-col mt-[22px] ">
             <ul>
               {navlinks &&
                 navlinks.map((link) => (
@@ -78,11 +78,12 @@ export const LeftMenu = () => {
                           : "text-[#a0a0a0]"
                       } ${
                         yandexBold.className
-                      } p-2 pl-3 pr-0 font-bold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 md:w-60 xl:w-40 tracking-[1.1px]`}
+                      } group p-2 pl-3 pr-0 font-bold hover:bg-[#A0A0A0] rounded-md hover:text-white flex justify-between transition ease-in-out delay-50 tracking-[1.1px]`}
                     >
                       {link.name}
                       {link.multilinks && (
                         <svg
+                          className="group-hover:fill-white"
                           fill={`${
                             pathName.startsWith(link.path)
                               ? "#F9CD46"

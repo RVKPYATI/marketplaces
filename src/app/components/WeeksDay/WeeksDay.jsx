@@ -2,6 +2,7 @@ import { ButtonPrimary } from "../ui/ButtonPrimary/ButtonPrimary";
 import { InputCheckLabel } from "../ui/InputCheckLabel/InputCheckLabel";
 import { InputCheckbox } from "../ui/InputCheckbox/InputCheckbox";
 import { InputText } from "../ui/InputText/InputText";
+import { yandexBold } from "@/app/fonts";
 
 export const WeeksDay = () => {
   const dayWeek = [
@@ -15,7 +16,7 @@ export const WeeksDay = () => {
   ];
   return (
     <>
-      <div className="flex gap-1 mt-12">
+      <div className="flex gap-1 mt-12 mb-4">
         <table className="table-fixed text-[12px] md:text-[15px] text-[#808080]">
           <thead>
             <tr>
@@ -32,18 +33,20 @@ export const WeeksDay = () => {
           </thead>
           <tbody>
             {dayWeek.map((day) => (
-              <tr key={day.id} className="p-2  border-b ">
+              <tr key={day.id} className="p-2 border-b hover:bg-gray-50">
                 <th>
-                  <div className="w-14 md:w-56 p-2 text-left text-[#212529] ">
+                  <div
+                    className={`${yandexBold.className} w-14 md:w-56 p-2 text-left text-[#212529]`}
+                  >
                     {day.label}
                   </div>
                 </th>
                 <th align="center">
                   <div className="w-14 md:w-24 p-1">
-                    <InputText />
+                    <InputText style={"border-none"} />
                   </div>
                 </th>
-                <th>
+                <th align="center">
                   <div className="w-14 md:w-24 p-2 ">
                     <div className="flex justify-center items-center mb-4">
                       <InputCheckbox />
@@ -59,7 +62,9 @@ export const WeeksDay = () => {
         </div>
       </div>
       <div>
-        <ButtonPrimary style="md:font-medium">Сохранить</ButtonPrimary>
+        <ButtonPrimary style="md:font-medium w-[104px]">
+          Сохранить
+        </ButtonPrimary>
       </div>
     </>
   );
