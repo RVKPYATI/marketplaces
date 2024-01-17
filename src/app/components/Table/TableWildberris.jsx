@@ -40,13 +40,13 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-14 md:w-20 xl:w-[80px] p-2">
-                  <InputText style="bg-white border-2 border-gray-200 focus:border-none hover:bg-white" />
+                <div className="w-14 md:w-20 xl:w-[100px] p-2">
+                  <InputText style="border-none" />
                 </div>
               </th>
               <th align="center">
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
-                  <InputText style="bg-white border-2 border-gray-200 focus:border-none hover:bg-white" />
+                  <InputText style="bg-white border-none focus:border-none hover:bg-white" />
                 </div>
               </th>
               <th align="center">

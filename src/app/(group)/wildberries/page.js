@@ -1,4 +1,4 @@
-import { MainBlock } from "../components/MainBlock/MainBlock";
+import { MainBlock } from "../../components/MainBlock/MainBlock";
 
 const headers = [
   { id: 1, label: "Наименование товара" },

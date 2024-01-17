@@ -48,7 +48,7 @@ export const WeeksDay = () => {
                 </th>
                 <th align="center">
                   <div className="w-14 md:w-24 p-2 ">
-                    <div className="flex justify-center items-center mb-4">
+                    <div className="">
                       <InputCheckbox />
                     </div>
                   </div>
