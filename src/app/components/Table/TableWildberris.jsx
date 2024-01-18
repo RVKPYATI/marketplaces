@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { yandexBold } from "@/app/fonts";
+import { yandexBold, yandexRegular } from "@/app/fonts";
 import { InputCheckbox } from "../ui/InputCheckbox/InputCheckbox";
 import { InputText } from "../ui/InputText/InputText";
 
@@ -41,19 +41,22 @@ export const TableWildberris = ({ headers, products }) => {
               </th>
               <th align="center">
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
-                  <InputText style="border-none" />
-                </div>
-              </th>
-              <th align="center">
-                <div className="w-14 md:w-20 xl:w-[100px] p-2">
                   <InputText style="bg-white border-none focus:border-none hover:bg-white" />
                 </div>
               </th>
               <th align="center">
-                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1  ">
-                  <InputText defaultValue={"22 900"} style={"border-none"} />
-                  <div className="text-[#8F8F8F] text-sm flex items-center">
-                    ₽
+                <div className="w-14 md:w-20 xl:w-[100px]">
+                  <span
+                    className={`${yandexRegular.className} text-[#000000] font-semibold text-center text-xs md:text-[15px]`}
+                  >
+                    0
+                  </span>
+                </div>
+              </th>
+              <th align="center">
+                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
+                  <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
+                    <InputText defaultValue={"22 900"} style={"border-none"} />
                   </div>
                 </div>
               </th>
@@ -63,10 +66,9 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1">
-                  <InputText style=" border-none " />
-                  <div className="text-[#8F8F8F] text-sm flex items-center">
-                    ₽
+                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
+                  <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
+                    <InputText style={"border-none"} />
                   </div>
                 </div>
               </th>

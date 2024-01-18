@@ -61,7 +61,7 @@ export const WeeksDay = () => {
           <InputCheckLabel />
         </div>
       </div>
-      <div>
+      <div className="pb-4">
         <ButtonPrimary style="md:font-medium w-[104px]">
           Сохранить
         </ButtonPrimary>
