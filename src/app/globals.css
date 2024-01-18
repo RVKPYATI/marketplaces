@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .drop {
-  @apply absolute top-0 right-[-100%] bg-[#dfdddd] w-[350px] h-screen text-white p-12 shadow-md hidden;
-} */
+.bg-custom {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),
+      rgb(0, 0, 0, 0.5)
+    ),
+    url("/bg-login.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
