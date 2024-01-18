@@ -1,5 +1,5 @@
 import { yandexRegular } from "@/app/fonts";
-export const InputText = ({ value, defaultValue = 0, st }) => {
+export const InputText = ({ value, defaultValue = 0, style }) => {
   return (
     <input
       type="text"
