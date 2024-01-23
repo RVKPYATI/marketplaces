@@ -43,7 +43,7 @@ export const WeeksDay = () => {
                 </th>
                 <th align="center">
                   <div className="w-14 md:w-24 p-1">
-                    <InputText style={"border-none"} />
+                    <InputText style="bg-white border-none focus:border-none hover:bg-white" />
                   </div>
                 </th>
                 <th align="center">

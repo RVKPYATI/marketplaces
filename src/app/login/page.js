@@ -5,7 +5,7 @@ export default function Login() {
   return (
     <section className="bg-custom h-screen">
       <div className="flex flex-col items-center justify-end px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="w-full h-[90%] bg-white rounded-2xl shadow md:mt-0 sm:max-w-md xl:p-0 pt-7">
+        <div className="w-full h-[94%] bg-white rounded-2xl shadow md:mt-0 sm:max-w-md xl:p-0 pt-7 mb-[1%]">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8 ">
             <div className="flex justify-center pb-8">
               <Image src="/main_logo.jpg" width={64} height={64} alt="logo" />
