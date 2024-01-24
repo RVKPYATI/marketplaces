@@ -6,7 +6,7 @@ export const InputText = ({ value, defaultValue = 0, style }) => {
   const [inputValue, setInputValue] = useState(value);
 
   const handleKeyDown = (event) => {
-    if (event.key === "Delete") {
+    if (event.key === "Backspace") {
       setInputValue("");
     }
   };
