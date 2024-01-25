@@ -16,7 +16,7 @@ export default function Login() {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-white mb-10 border border-gray-300 text-gray-900 text-sm md:text-3xl rounded-lg focus:ring-[#F9CD46] focus:border-[#F9CD46] block w-full px-3 py-3 placeholder:text-2xl placeholder:text-gray-300"
+                  className="bg-white mb-10 border border-gray-300 text-gray-900 text-sm md:text-4xl rounded-lg focus:ring-[#F9CD46] focus:border-[#F9CD46] block w-full px-3 py-3 placeholder:text-2xl placeholder:text-gray-300"
                   placeholder="Логин"
                   required=""
                 />
@@ -27,7 +27,7 @@ export default function Login() {
                   name="password"
                   id="password"
                   placeholder="Пароль"
-                  className="bg-white border border-gray-300 text-gray-900 text-sm md:text-3xl rounded-lg focus:ring-[#F9CD46] focus:border-[#F9CD46] block w-full px-3 py-3 placeholder:text-2xl placeholder:text-gray-300"
+                  className="bg-white border border-gray-300 text-gray-900 text-sm md:text-4xl rounded-lg focus:ring-[#F9CD46] focus:border-[#F9CD46] block w-full px-3 py-3 placeholder:text-2xl placeholder:text-gray-300"
                   required=""
                 />
               </div>
@@ -35,7 +35,7 @@ export default function Login() {
               <div className="pt-9">
                 <button
                   type="submit"
-                  className="w-full text-black font-bold bg-[#ffcc09] hover:bg-orange-300 rounded-lg px-5 py-2.5 text-center "
+                  className="w-full text-black font-bold bg-[#ffcc09] hover:bg-[#F2C017] rounded-lg px-5 py-2.5 text-center "
                 >
                   Войти
                 </button>

@@ -5,16 +5,16 @@ import { InputText } from "../ui/InputText/InputText";
 
 export const TableWildberris = ({ headers, products }) => {
   return (
-    <div className="p-1 mt-5">
-      <table className="md:table-fixed text-[10px] md:text-[15px] text-[#808080] w-full">
+    <div className="p-1 mt-5 overflow-scroll md:overflow-auto">
+      <table className="md:table-fixed text-[15px] md:text-[15px] text-[#808080] w-full">
         <thead>
           <tr className="border-b border-[#808080]">
             {headers.map((header) => (
               <th
                 key={header.id}
-                className="md:first:text-left md:first:pl-12 2xl:first:w-[850px] xl:first:w-[500px] md:first:w-[320px] first:max-w-full w-10 md:w-20 xl:w-[100px] "
+                className="md:first:text-left md:first:pl-12 2xl:first:w-[850px] xl:first:w-[500px] md:first:w-[320px] first:min-w-[250px] w-10 md:w-20 xl:w-[100px] "
               >
-                <div className={`w-18 p-1 `}>{header.label}</div>
+                <div className="w-18 p-1 ">{header.label}</div>
               </th>
             ))}
           </tr>
@@ -26,7 +26,7 @@ export const TableWildberris = ({ headers, products }) => {
               className={`${yandexBold.className} font-bold border-b hover:bg-gray-50 cursor-pointer`}
             >
               <th>
-                <div className="flex flex-wrap md:flex-nowrap md:gap-4 items-center">
+                <div className="flex gap-4 items-center">
                   <Image
                     className="md:w-10"
                     src={product.img}

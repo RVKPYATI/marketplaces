@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navlinks = [
   { id: 1, name: "Wildberries", path: "/wildberries" },
@@ -56,28 +57,52 @@ export const MobileMenu = () => {
   };
 
   return (
-    <div className="relative lg:hidden bg-[#2B2B2B] shadow-xl">
-      <button className="text-white focus:outline-none" onClick={toggleMenu}>
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
+    <div className="relative lg:hidden bg-[#2B2B2B] shadow-xl h-9">
+      <button
+        className="text-white focus:outline-none w-8"
+        onClick={toggleMenu}
+      >
+        {!isOpen ? (
+          <svg
+            className="w-7 h-7 ml-2 mt-1 "
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        ) : (
+          <div className="ml-2 mt-1">
+            <Image
+              src="/close.svg"
+              width={24}
+              height={24}
+              alt="close"
+              className=""
+            />
+          </div>
+        )}
       </button>
 
       {isOpen && (
-        <div className="fixed top-6 mr-2 w-screen z-10">
+        <div className="fixed top-9 mr-2 w-screen z-10">
           <div className="bg-[#2B2B2B] p-2 h-screen text-center">
             {/* Здесь вы можете добавить свои пункты меню */}
+            <div className="flex justify-center">
+              <Image
+                src="/main_logo.jpg"
+                className="rounded-full"
+                width={64}
+                height={64}
+                alt="logo"
+              />
+            </div>
             <ul>
               {navlinks &&
                 navlinks.map((link) => (
