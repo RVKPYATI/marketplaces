@@ -54,7 +54,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
+                <div className="w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
                   <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
                     <InputText defaultValue={"22 900"} style={"border-none"} />
                   </div>
@@ -66,7 +66,7 @@ export const TableWildberris = ({ headers, products }) => {
                 </div>
               </th>
               <th align="center">
-                <div className="w-16 md:w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
+                <div className="w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
                   <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
                     <InputText style={"border-none"} />
                   </div>

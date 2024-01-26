@@ -57,14 +57,14 @@ export const MobileMenu = () => {
   };
 
   return (
-    <div className="relative lg:hidden bg-[#2B2B2B] shadow-xl h-9">
+    <div className="relative lg:hidden bg-[#2B2B2B] shadow-xl h-12">
       <button
         className="text-white focus:outline-none w-8"
         onClick={toggleMenu}
       >
         {!isOpen ? (
           <svg
-            className="w-7 h-7 ml-2 mt-1 "
+            className="w-7 h-7 ml-3 mt-2 "
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ export const MobileMenu = () => {
             />
           </svg>
         ) : (
-          <div className="ml-2 mt-1">
+          <div className="w-10 ml-4 mt-4">
             <Image
               src="/close.svg"
               width={24}
@@ -91,7 +91,7 @@ export const MobileMenu = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed top-9 mr-2 w-screen z-10">
+        <div className="fixed top-12 mr-2 w-screen z-10">
           <div className="bg-[#2B2B2B] p-2 h-screen text-center">
             {/* Здесь вы можете добавить свои пункты меню */}
             <div className="flex justify-center">
@@ -114,7 +114,7 @@ export const MobileMenu = () => {
                         pathName.startsWith(link.path)
                           ? "text-orange-300"
                           : "text-white"
-                      } p-4 text-[#a0a0a0] text-base font-semibold hover:bg-orange-300 rounded-md hover:text-[#2B2B2B] flex justify-between`}
+                      } p-4 text-[#a0a0a0] text-base font-semibold hover:bg-[#30323B] rounded-md  flex justify-between`}
                     >
                       {link.name}
                       {link.multilinks && (
@@ -135,29 +135,30 @@ export const MobileMenu = () => {
         </div>
       )}
       {isOpenDropdown && (
-        <div className="fixed top-6 w-screen right-0 z-10">
-          <div className="bg-[#6d6c6c] px-2 pb-6 text-center rounded h-screen">
+        <div className="fixed top-0 w-screen right-0 z-10">
+          <div className="bg-white px-2 pb-6 text-center h-screen">
             {/* Здесь вы можете добавить свои пункты меню */}
-            <div className="text-white text-right ">
+            <div className="text-white text-left pt-7 ">
               <button
                 onClick={() => setItsOpenDropdown(false)}
                 className="text-white w-6"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    fill="white"
-                    d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.18 182.18 0 0 0 256 73.82zm90.615 272.724a24.554 24.554 0 0 1-34.712 0l-54.664-54.667-57.142 57.146a24.544 24.544 0 0 1-34.704-34.717l57.138-57.128-53.2-53.209a24.547 24.547 0 0 1 34.712-34.717l53.196 53.208 50.717-50.72a24.547 24.547 0 0 1 34.713 34.716l-50.713 50.722 54.659 54.65a24.56 24.56 0 0 1 0 34.717z"
-                    data-name="Close"
-                  />
+                <svg
+                  fill="#000000"
+                  height="24px"
+                  width="24px"
+                  viewBox="0 0 404.258 404.258"
+                >
+                  <polygon points="289.927,18 265.927,0 114.331,202.129 265.927,404.258 289.927,386.258 151.831,202.129 " />
                 </svg>
               </button>
             </div>
             <ul>
               {dropLikns.map((link) => (
-                <li key={link.id}>
+                <li key={link.id} className="text-left m-4">
                   <Link
                     href={link.path}
-                    className="text-white"
+                    className="text-black font-semibold"
                     onClick={toggleMenu}
                   >
                     {link.name}
