@@ -6,7 +6,7 @@ import { InputText } from "../ui/InputText/InputText";
 export const TableWildberris = ({ headers, products }) => {
   return (
     <div className="p-1 mt-5 overflow-scroll md:overflow-auto">
-      <table className="md:table-fixed text-[15px] md:text-[15px] text-[#808080] w-full">
+      <table className="md:table-fixed text-base text-[#808080] w-full">
         <thead>
           <tr className="border-b border-[#808080]">
             {headers.map((header) => (

@@ -17,7 +17,7 @@ export const WeeksDay = () => {
   return (
     <>
       <div className="flex gap-1 mt-12 mb-4">
-        <table className="table-fixed text-[12px] md:text-[15px] text-[#808080]">
+        <table className="table-fixed text-base text-[#808080]">
           <thead>
             <tr>
               <th>
