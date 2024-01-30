@@ -20,28 +20,31 @@ export const TableWildberris = ({ headers, products }) => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product) => (
+          {products?.map((product) => (
             <tr
               key={product.id}
               className={`${yandexBold.className} font-bold border-b hover:bg-gray-50 cursor-pointer`}
             >
               <th>
                 <div className="flex gap-4 items-center">
-                  <Image
+                  <img
                     className="md:w-10"
-                    src={product.img}
+                    src={product.thumbnail}
                     width={24}
                     height={24}
                     alt="product"
                   />
                   <p className="text-[#212529]  md:text-base leading-tight">
-                    {product.label}
+                    {product.name}
                   </p>
                 </div>
               </th>
               <th align="center">
                 <div className="w-14 md:w-20 xl:w-[100px] p-2">
-                  <InputText style="bg-white border-none focus:border-none hover:bg-white" />
+                  <InputText
+                    style="bg-white border-none focus:border-none hover:bg-white"
+                    value={product.fbs}
+                  />
                 </div>
               </th>
               <th align="center">
@@ -49,14 +52,17 @@ export const TableWildberris = ({ headers, products }) => {
                   <span
                     className={`${yandexRegular.className} text-[#000000] font-semibold text-center text-xs md:text-[15px]`}
                   >
-                    0
+                    {product.fby}
                   </span>
                 </div>
               </th>
               <th align="center">
                 <div className="w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
                   <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
-                    <InputText defaultValue={"22 900"} style={"border-none"} />
+                    <InputText
+                      value={product.price.toLocaleString("ru")}
+                      style={"border-none"}
+                    />
                   </div>
                 </div>
               </th>
@@ -68,7 +74,10 @@ export const TableWildberris = ({ headers, products }) => {
               <th align="center">
                 <div className="w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
                   <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
-                    <InputText style={"border-none"} />
+                    <InputText
+                      style={"border-none"}
+                      value={product.new_price}
+                    />
                   </div>
                 </div>
               </th>

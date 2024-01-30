@@ -1,4 +1,10 @@
+"use client";
 import { MainBlock } from "@/app/components/MainBlock/MainBlock";
+import { productWildberries } from "@/app/services/getWildberries";
+import withAuth from "@/app/services/withAuth";
+import Cookies from "js-cookie";
+import { useEffect, useState } from "react";
+
 const headers = [
   { id: 1, label: "Наименование товара" },
   { id: 2, label: "FBS" },
@@ -20,12 +26,32 @@ const products = [
   { id: 5, label: "Робот мойщик окон 291 Ultrasonic", img: "/prod.webp" },
 ];
 
-export const metadata = {
-  title: "Wildberries",
-};
+// export const metadata = {
+//   title: "Wildberries",
+// };
 
-export default function Wildberries() {
-  return (
+//const productsWild = await productWildberries();
+
+function Wildberries() {
+  const [products, setProducts] = useState();
+  const [title, setTitle] = useState("Wildberries");
+
+  useEffect(() => {
+    const token = Cookies.get("accessToken");
+    const getResults = async () => {
+      const productsWild = await productWildberries(token);
+
+      setProducts(productsWild.results);
+    };
+
+    getResults();
+    document.title = title;
+  }, []);
+
+  return products ? (
     <MainBlock headers={headers} products={products} title="Wildberries" />
+  ) : (
+    "Загрузка..."
   );
 }
+export default withAuth(Wildberries);

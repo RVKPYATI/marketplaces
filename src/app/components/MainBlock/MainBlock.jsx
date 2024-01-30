@@ -1,3 +1,4 @@
+"use client";
 import { TableWildberris } from "../Table/TableWildberris";
 import { WeeksDay } from "../WeeksDay/WeeksDay";
 import { ModalWrapper } from "../ui/Modal/ModalWrapper";
