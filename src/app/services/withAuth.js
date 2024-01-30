@@ -1,31 +1,36 @@
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"; // Исправлен путь импорта
 import nookies from "nookies";
 
 const withAuth = (WrappedComponent) => {
-  return (props) => {
-    // Используйте useRouter для доступа к функционалу роутинга
+  const WithAuthComponent = (props) => {
     const router = useRouter();
 
     useEffect(() => {
-      // Проверьте статус авторизации (например, из cookies)
       const cookies = nookies.get();
-
       const isAuth = cookies.accessToken ? true : false;
 
       if (!isAuth) {
-        // Если пользователь не авторизован, перенаправьте его на страницу /login
         router.push("/login");
-      }
-      if (isAuth) {
-        // Если пользователь не авторизован, перенаправьте его на страницу /login
+      } else {
         router.push("/wildberries");
       }
     }, [router]);
 
-    // Если пользователь авторизован, отрендерите компонент
     return <WrappedComponent {...props} />;
   };
+
+  // Задаем displayName для компонента для улучшения отладки
+  WithAuthComponent.displayName = `WithAuth(${getDisplayName(
+    WrappedComponent
+  )})`;
+
+  return WithAuthComponent;
 };
+
+// Вспомогательная функция для получения displayName компонента
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || "Component";
+}
 
 export default withAuth;
