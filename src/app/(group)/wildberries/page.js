@@ -4,6 +4,7 @@ import { productWildberries } from "@/app/services/getWildberries";
 import withAuth from "@/app/services/withAuth";
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 const headers = [
   { id: 1, label: "Наименование товара" },
@@ -49,7 +50,15 @@ function Wildberries() {
   }, []);
 
   return products ? (
-    <MainBlock headers={headers} products={products} title="Wildberries" />
+    <>
+      <Head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
+      </Head>
+      <MainBlock headers={headers} products={products} title="Wildberries" />
+    </>
   ) : (
     "Загрузка..."
   );
