@@ -59,10 +59,7 @@ export const TableWildberris = ({ headers, products }) => {
               <th align="center">
                 <div className="w-20 xl:w-[100px] p-2 flex items-center gap-1 relative">
                   <div className="text-[#8F8F8F] text-sm flex items-center after:absolute after:content-['₽'] after:top-[35%] after:right-[-4px] after:w-2 after:h-2">
-                    <InputText
-                      value={product.price.toLocaleString("ru")}
-                      style={"border-none"}
-                    />
+                    <InputText value={product.price} style={"border-none"} />
                   </div>
                 </div>
               </th>
